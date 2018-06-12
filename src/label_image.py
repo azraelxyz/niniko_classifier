@@ -135,6 +135,6 @@ if __name__ == "__main__":
   results = np.squeeze(results)
 #  top_k = results.argsort()[-5:][::-1]
   labels = load_labels(label_file)
- for i in len(labels):
+  for i in len(labels):
     print(labels[i], results[i])
 
