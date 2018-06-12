@@ -133,16 +133,8 @@ if __name__ == "__main__":
         input_operation.outputs[0]: t
     })
   results = np.squeeze(results)
-
-#  print('results:', results)
-#  print('results.argsort()[-5:]', results.argsort()[-5:])
-#  print('results.argsort()[-5:][::-1]', results.argsort()[-5:][::-1])
-
 #  top_k = results.argsort()[-5:][::-1]
   labels = load_labels(label_file)
-#  print(labels)
-#  print(results)
-#  for i in top_k:
-#    print(i)
-#    print(labels[i], results[i])
-  print(labels[2], results[2])
+ for i in len(labels):
+    print(labels[i], results[i])
+
